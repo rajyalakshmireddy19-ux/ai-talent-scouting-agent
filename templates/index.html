@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Talent Scouting Agent</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎯 AI Talent Scouting Agent</h1>
+            <p>Intelligent candidate discovery and engagement platform</p>
+        </header>
+
+        <main>
+            <div class="input-section">
+                <h2>Job Description</h2>
+                <form id="jobForm">
+                    <textarea 
+                        id="jobDescription" 
+                        name="job_description" 
+                        placeholder="Paste your job description here...
+
+Example:
+Senior Python Developer
+We are looking for an experienced Python developer with 5+ years of experience.
+Required skills: Python, Django/Flask, AWS, PostgreSQL, Docker
+Location: Remote/San Francisco
+Responsibilities include leading a team and architecting scalable solutions."
+                        rows="12"
+                        required
+                    ></textarea>
+                    <button type="submit" id="submitBtn">
+                        <span class="btn-text">🔍 Find Candidates</span>
+                        <span class="loading" style="display: none;">⏳ Processing...</span>
+                    </button>
+                </form>
+            </div>
+
+            <div id="results" class="results-section" style="display: none;">
+                <h2>📊 Candidate Analysis Results</h2>
+                
+                <div id="jobSummary" class="job-summary"></div>
+                
+                <div class="scoring-info">
+                    <h3>📈 Scoring Methodology</h3>
+                    <div class="scoring-grid">
+                        <div class="score-card">
+                            <h4>Match Score (60%)</h4>
+                            <ul>
+                                <li>Skills alignment: 40%</li>
+                                <li>Experience level: 30%</li>
+                                <li>Semantic similarity: 20%</li>
+                                <li>Location preference: 10%</li>
+                            </ul>
+                        </div>
+                        <div class="score-card">
+                            <h4>Interest Score (40%)</h4>
+                            <ul>
+                                <li>Response enthusiasm: 50%</li>
+                                <li>Availability timeline: 30%</li>
+                                <li>Salary expectations: 20%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="candidatesList" class="candidates-list"></div>
+            </div>
+
+            <div id="error" class="error-section" style="display: none;">
+                <h3>❌ Error</h3>
+                <p id="errorMessage"></p>
+            </div>
+        </main>
+
+        <footer>
+            <p>Built with FastAPI, OpenAI, and modern web technologies</p>
+        </footer>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

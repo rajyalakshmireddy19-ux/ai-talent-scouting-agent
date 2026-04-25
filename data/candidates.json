@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "John Doe",
+    "email": "john.doe@email.com",
+    "skills": ["python", "django", "aws", "postgresql", "docker", "kubernetes"],
+    "experience_years": 6,
+    "current_role": "Senior Python Developer",
+    "location": "San Francisco",
+    "summary": "Experienced Python developer with expertise in Django and cloud technologies. Led multiple teams and architected scalable microservices."
+  },
+  {
+    "id": 2,
+    "name": "Jane Smith",
+    "email": "jane.smith@email.com",
+    "skills": ["python", "flask", "react", "mongodb", "kubernetes", "ci/cd"],
+    "experience_years": 4,
+    "current_role": "Full Stack Developer",
+    "location": "Remote",
+    "summary": "Full-stack developer specializing in Python backend and React frontend. Strong DevOps background with CI/CD expertise."
+  },
+  {
+    "id": 3,
+    "name": "Mike Johnson",
+    "email": "mike.johnson@email.com",
+    "skills": ["java", "spring", "aws", "mysql", "microservices", "docker"],
+    "experience_years": 8,
+    "current_role": "Lead Java Developer",
+    "location": "New York",
+    "summary": "Senior Java developer with strong background in microservices architecture and cloud deployment on AWS."
+  },
+  {
+    "id": 4,
+    "name": "Sarah Wilson",
+    "email": "sarah.wilson@email.com",
+    "skills": ["python", "machine learning", "tensorflow", "pandas", "aws", "sql"],
+    "experience_years": 5,
+    "current_role": "Data Scientist",
+    "location": "Boston",
+    "summary": "Data scientist with strong Python and ML engineering skills. Experience in deploying ML models to production."
+  },
+  {
+    "id": 5,
+    "name": "Alex Chen",
+    "email": "alex.chen@email.com",
+    "skills": ["javascript", "node.js", "react", "mongodb", "docker", "aws"],
+    "experience_years": 3,
+    "current_role": "Frontend Developer",
+    "location": "Seattle",
+    "summary": "Frontend specialist with full-stack JavaScript capabilities. Strong experience in modern React applications."
+  },
+  {
+    "id": 6,
+    "name": "Emily Rodriguez",
+    "email": "emily.rodriguez@email.com",
+    "skills": ["python", "django", "postgresql", "redis", "celery", "aws"],
+    "experience_years": 7,
+    "current_role": "Senior Backend Engineer",
+    "location": "Austin",
+    "summary": "Backend specialist with deep Django expertise. Built high-performance APIs serving millions of users."
+  },
+  {
+    "id": 7,
+    "name": "David Kim",
+    "email": "david.kim@email.com",
+    "skills": ["python", "fastapi", "docker", "kubernetes", "postgresql", "redis"],
+    "experience_years": 4,
+    "current_role": "Backend Developer",
+    "location": "Remote",
+    "summary": "Modern Python developer specializing in FastAPI and containerized applications. Strong DevOps mindset."
+  },
+  {
+    "id": 8,
+    "name": "Lisa Thompson",
+    "email": "lisa.thompson@email.com",
+    "skills": ["python", "flask", "aws", "lambda", "dynamodb", "api"],
+    "experience_years": 5,
+    "current_role": "Cloud Engineer",
+    "location": "Denver",
+    "summary": "Cloud-native developer with expertise in serverless architectures and AWS services."
+  }
+]
