@@ -14,11 +14,6 @@ from models.scoring_engine import ScoringEngine
 load_dotenv()
 
 app = FastAPI(title="AI Talent Scouting Agent")
-
-# Ensure static and templates directories exist to prevent startup errors
-if not os.path.exists("static"):
-    os.makedirs("static")
-
 app.mount("/static", StaticFiles(directory="static"), name="static")
 templates = Jinja2Templates(directory="templates")
 
@@ -30,11 +25,7 @@ scoring_engine = ScoringEngine()
 
 @app.get("/", response_class=HTMLResponse)
 async def home(request: Request):
-    # FIXED: In modern FastAPI/Starlette, 'request' must be a keyword argument
-    return templates.TemplateResponse(
-        request=request, 
-        name="index.html"
-    )
+    return templates.TemplateResponse("index.html", {"request": request})
 
 @app.post("/process_job")
 async def process_job(job_description: str = Form(...)):
@@ -63,5 +54,4 @@ async def process_job(job_description: str = Form(...)):
         return {"success": False, "error": str(e)}
 
 if __name__ == "__main__":
-    # Note: host "0.0.0.0" makes the server accessible on your local network
     uvicorn.run(app, host="0.0.0.0", port=8000)
